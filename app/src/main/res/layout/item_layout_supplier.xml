@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp">
+
+        <ImageView
+            android:id="@+id/imv_supplier"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txv_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imv_supplier"
+            android:text="supplier_name"
+            android:textSize="15pt" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_edit_supplier"
+            android:layout_toEndOf="@+id/txv_name"
+            android:src="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/txv_lastname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_name"
+            android:layout_toRightOf="@id/imv_supplier"
+            android:text="Last name"
+            android:textSize="10pt"
+
+            />
+
+        <TextView
+            android:id="@+id/txv_type"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txv_lastname"
+            android:layout_below="@+id/txv_lastname"
+            android:text="Type"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:id="@+id/btn_edit_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/txv_name"
+            android:layout_toRightOf="@+id/txv_name"
+            android:src="@android:drawable/ic_menu_edit" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

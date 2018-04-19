@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_book">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="283dp">
+
+        <ImageView
+            android:id="@+id/imv_book"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txv_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imv_book"
+            android:text="book_name"
+            android:textSize="15pt" />
+
+        <ImageButton
+            android:id="@+id/btn_delete_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_edit_book"
+            android:layout_toEndOf="@+id/txv_name"
+            android:src="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/txv_author"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_name"
+            android:layout_toRightOf="@id/imv_book"
+            android:text="author"
+            android:textSize="10pt"
+
+            />
+
+        <TextView
+            android:id="@+id/txv_isbn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txv_author"
+            android:layout_below="@+id/txv_author"
+            android:text="isbn"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/txv_genre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txv_author"
+            android:layout_below="@+id/txv_isbn"
+            android:text="genre"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/txv_pages_num"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txv_author"
+            android:layout_below="@+id/txv_genre"
+            android:text="pages number"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/txv_year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txv_author"
+            android:layout_below="@+id/txv_pages_num"
+            android:text="year"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:id="@+id/btn_edit_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/txv_name"
+            android:layout_toRightOf="@+id/txv_name"
+            android:src="@android:drawable/ic_menu_edit" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

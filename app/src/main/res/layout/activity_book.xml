@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_book"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_name"
+        android:inputType="text"
+        android:hint="Type name book"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Type author"
+        android:layout_below="@+id/edt_name"
+        android:id="@+id/edt_author"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Type isbn"
+        android:id="@+id/edt_isbn"
+        android:layout_below="@+id/edt_author"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Type genre"
+        android:id="@+id/edt_genre"
+        android:layout_below="@+id/edt_isbn"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Type pages number"
+        android:id="@+id/edt_pages_num"
+        android:layout_below="@+id/edt_genre"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Type year"
+        android:id="@+id/edt_year"
+        android:layout_below="@+id/edt_pages_num"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save book"
+        android:layout_below="@+id/edt_year"
+        android:id="@+id/btn_save_book"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_save_book"
+        android:id="@+id/rcv_books_list"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

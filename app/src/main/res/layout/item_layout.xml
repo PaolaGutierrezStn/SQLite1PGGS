@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/crv_supplier">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="359dp">
+
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_product"
+            android:text="product_name"
+            android:textSize="15pt" />
+
+        <ImageButton
+            android:id="@+id/bt_delete_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_edit_product"
+            android:layout_toEndOf="@+id/tv_product_name"
+            android:src="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_name"
+            android:layout_toRightOf="@id/iv_product"
+            android:text="@string/product_price"
+            android:textSize="10pt"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_product_stock"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_product_price"
+            android:layout_below="@+id/tv_product_price"
+            android:text="@string/product_stock"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:id="@+id/bt_edit_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/tv_product_name"
+            android:layout_toRightOf="@+id/tv_product_name"
+            android:src="@android:drawable/ic_menu_edit" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
